@@ -1,0 +1,77 @@
+# Math
+def div(divi1, divi2):
+    return divi1 / divi2
+def add(add1, add2):
+    return add1 + add2
+def mul(mul1, mul2):
+    return mul1 * mul2
+def sub(sub1, sub2):
+    return sub1 / sub2
+
+print("a. Addition")
+print("b. Subtract")
+print("c. Multimlication")
+print("d. division")
+num = int(input("Number = "))
+number  = int(input("Number = "))
+Choose = input("Choose one (a, b, c, d) =")
+if Choose == "a":
+    print(add(num ,number))
+elif Choose == 'b':
+    print(sub(num, number))
+elif Choose == "c":
+    print(mul(num, number))
+elif Choose == "d":
+    print(div(num, number))
+
+
+import math
+def Claculate_Area(shape, Dimension, Dimension2):
+    if shape == "rectangle" or shape == "square":
+       return Dimension * Dimension2
+    elif shape == 'circle':
+        return math.pi * (radius ** 2)
+    elif shape == "triangle":
+        return (Dimension * Dimension2) / 2
+    elif shape == "parralleogram":
+        return Dimension * Dimension2
+
+shape = input("Enter a shape name : ")
+if shape == "rectangle" or shape == "square":
+    height = int(input('Height : '))
+    width = int(input('width : '))
+    print(Claculate_Area(shape, height, width))
+elif shape == "circle":
+    radius = int(input("Radius : "))
+    print(Claculate_Area(shape, radius))
+elif shape == "triangle" or shape == "parralleogram":
+    height = int(input("Height : "))
+    base = int(input("Base"))
+    print(Claculate_Area(shape, height, base))
+
+
+
+
+def name():
+    print("Hello world")
+name()
+
+def flower(r, s):
+    print(r,s)
+flower("Rose","Sunflower")
+
+def weatherName(weather3, weather4):
+    print(weather3,weather4)
+
+weather = input("Enter a seasson name : ")
+weather2 = input("Enter a seasson name : ")
+weatherName(weather, weather2)
+
+def season_Name(mon):
+    if mon == "Octber":
+        print("winter")
+    elif mon == "April":
+        print("Summer")
+month = input("Enter a month name")
+season_Name(month)
+
